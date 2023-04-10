@@ -1,5 +1,5 @@
 import "./App.css";
-import Rect, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from 'axios';
 
 function App() {
@@ -50,7 +50,7 @@ const deleteProduct = (id) =>{
 
 const updateProduct = (id) =>{
   console.log("updateDesc",updateDesc)
-  if(onchangeId != id){
+  if(onchangeId !== id){
     setNewDesc("")
     alert("Please enter description")
     return

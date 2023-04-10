@@ -1,6 +1,7 @@
 import "./App.css";
 import React, {useState, useEffect} from 'react'
 import axios from 'axios';
+import Navbar from "./Navbar";
 
 function App() {
   const [prodName, setProdName] = useState("");
@@ -75,6 +76,7 @@ const updateProduct = (id) =>{
   },[])
   return (
     <div className="App">
+      
       <h1>First CRUD ReactJS + MYSQL App</h1>
       <label>Product name</label>
       <input type={"text"} placeholder="Enter name" value={prodName} onChange={(e)=>setProdName(e.target.value)}/>
